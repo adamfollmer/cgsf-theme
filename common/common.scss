@@ -1,0 +1,85 @@
+// Connect St. Francis — mirrors the Transparent St. Francis visual system:
+// maroon / paper / Libre Franklin / IBM Plex Mono / arched-sign motif.
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  // the signature arched-sign top
+  --cgsf-arch: 50% 50% 8px 8px / 30% 30% 8px 8px;
+  --cgsf-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+// ── Typography ──
+body {
+  font-family: "Libre Franklin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 { font-weight: 800; letter-spacing: -0.02em; }
+h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
+
+.topic-list .title,
+.fancy-title,
+#site-text-logo {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+// links in posts: quiet editorial underline
+.cooked a:not(.badge-category__wrapper):not(.lightbox):not(.mention) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+// dates & counters get the data treatment
+.relative-date,
+.topic-list .num,
+.post-info .post-date {
+  font-family: var(--cgsf-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.86em;
+}
+
+// ── Buttons: 8px radius, confident weight ──
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+}
+.btn-primary {
+  background: var(--tertiary);
+  &:hover { background: var(--quaternary); }
+}
+
+// ── Hairline structure ──
+.topic-list-item { border-bottom: 1px solid var(--primary-low); }
+.topic-list .topic-list-item td { border-top: none; }
+
+// ── Header: maroon band, wordmark energy ──
+.d-header {
+  box-shadow: 0 1px 0 rgba(28, 22, 25, 0.12);
+  #site-text-logo { font-weight: 800; letter-spacing: -0.01em; }
+}
+
+// ── The arch: reserved for "official sign" moments ──
+.welcome-banner .search-banner-inner,
+#banner {
+  border-radius: var(--cgsf-arch);
+}
+.user-card {
+  border-radius: 12px 12px 8px 8px;
+  border-top: 3px solid var(--tertiary);
+}
+
+// category badges: small civic plaques
+.badge-category__wrapper .badge-category {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+// quiet paper band behind the composer
+#reply-control {
+  background: var(--secondary);
+  border-top: 3px solid var(--tertiary);
+}

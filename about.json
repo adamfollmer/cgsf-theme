@@ -1,0 +1,21 @@
+{
+  "name": "Connect St. Francis",
+  "about_url": "https://github.com/adamfollmer/cgsf-theme",
+  "license_url": "https://github.com/adamfollmer/cgsf-theme",
+  "authors": "Adam F.",
+  "theme_version": "0.1.0",
+  "color_schemes": {
+    "Connect St. Francis": {
+      "primary": "1C1619",
+      "secondary": "FAF6F3",
+      "tertiary": "6E1A2C",
+      "quaternary": "4E101F",
+      "header_background": "6E1A2C",
+      "header_primary": "FBEFF1",
+      "highlight": "F4B400",
+      "danger": "9E4A35",
+      "success": "2E7D32",
+      "love": "6E1A2C"
+    }
+  }
+}
