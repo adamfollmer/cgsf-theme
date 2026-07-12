@@ -83,3 +83,14 @@ h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   background: var(--secondary);
   border-top: 3px solid var(--tertiary);
 }
+
+// ── Polis embeds: full-width, tall enough to actually deliberate in ──
+// (the sanitizer strips inline styles from iframes, so sizing lives here)
+.cooked iframe[src^="https://pol.is/"] {
+  width: 100%;
+  height: 75vh;
+  min-height: 620px;
+  border: 1px solid var(--primary-low);
+  border-radius: var(--cgsf-arch);
+  background: var(--secondary);
+}
