@@ -3,8 +3,18 @@
   "about_url": "https://github.com/adamfollmer/cgsf-theme",
   "license_url": "https://github.com/adamfollmer/cgsf-theme",
   "authors": "Adam F.",
-  "theme_version": "0.2.0",
-  "svg_icons": ["circle-check", "far-circle-check"],
+  "theme_version": "0.3.0",
+  "svg_icons": [
+    "circle-check",
+    "far-circle-check",
+    "landmark",
+    "square-poll-vertical",
+    "comments",
+    "book-open"
+  ],
+  "modifiers": {
+    "custom_homepage": true
+  },
   "color_schemes": {
     "Connect St. Francis": {
       "primary": "1C1619",

@@ -94,3 +94,105 @@ h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   border-radius: 8px;
   background: var(--secondary);
 }
+
+// ── Custom homepage: warm landing with big obvious doors ──
+.cgsf-home {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.5em 0.75em 2em;
+
+  &__hero {
+    text-align: center;
+    margin-bottom: 1.75em;
+
+    h1 {
+      color: var(--tertiary);
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      font-size: var(--font-up-1);
+      color: var(--primary-high);
+      max-width: 34em;
+      margin: 0 auto;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.35em;
+    padding: 1.5em 1em;
+    background: var(--secondary);
+    border: 2px solid var(--primary-low);
+    border-radius: 10px;
+    color: var(--primary);
+
+    .d-icon {
+      font-size: 1.9em;
+      color: var(--tertiary);
+      margin-bottom: 0.2em;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--tertiary);
+      background: var(--tertiary-very-low);
+      text-decoration: none;
+    }
+  }
+
+  &__btn-title {
+    font-weight: 600;
+    font-size: var(--font-up-1);
+    color: var(--tertiary);
+  }
+
+  &__btn-sub {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &__latest {
+    h2 {
+      color: var(--tertiary);
+      border-bottom: 2px solid var(--primary-low);
+      padding-bottom: 0.3em;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1em;
+      padding: 0.65em 0.25em;
+      border-bottom: 1px solid var(--primary-very-low);
+
+      a {
+        color: var(--primary);
+        font-size: var(--font-up-1);
+      }
+    }
+  }
+
+  &__cat {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+    white-space: nowrap;
+  }
+}
